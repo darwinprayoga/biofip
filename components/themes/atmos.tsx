@@ -572,8 +572,8 @@ export default function ATMOS({
 
 
 
-            <motion.div layout animate={{ scale: [1, 1.2, 1], rotate: [360, 0, 360], rotateY: [360, 0, 360], rotateZ: [360, 0, 360], transition: { yoyo: Infinity, duration: 30 } }} style={{ position: 'fixed', zIndex: 1, background: color, opacity: '20%', filter: 'blur(30px)', borderRadius: '80%', width: '500px', height: '300px' }} />
-            <motion.div layout animate={{ x: [250, -250], y: [500, -500], transition: { yoyo: Infinity, duration: 30 } }} style={{ position: 'fixed', background: color, opacity: '20%', filter: 'blur(30px)', zIndex: 2, borderRadius: '80%', width: '300px', height: '200px' }} />
+            <motion.div layout animate={{ scale: [1, 1.2, 1], zIndex: 1, rotate: [360, 0, 360], rotateY: [360, 0, 360], rotateZ: [360, 0, 360], transition: { yoyo: Infinity, duration: 30 } }} style={{ position: 'fixed', zIndex: 1, background: color, opacity: '20%', filter: 'blur(30px)', borderRadius: '80%', width: '500px', height: '300px' }} />
+            <motion.div layout animate={{ x: [250, -250], zIndex: 2, y: [500, -500], transition: { yoyo: Infinity, duration: 30 } }} style={{ position: 'fixed', background: color, opacity: '20%', filter: 'blur(30px)', zIndex: 2, borderRadius: '80%', width: '300px', height: '200px' }} />
 
 
 
@@ -613,7 +613,7 @@ export default function ATMOS({
                     setPlaylist('none')
                     setDiscord('none')
                     setCustom('none')
-                }} whileHover={{ cursor: 'pointer' }} draggable={false} animate={{ rotate: disc, transition: { duration: 5 } }} src={pinTrack.image} style={{ position: 'fixed', width: 40, borderRadius: '100%', right: 0, bottom: 0, margin: 24, borderStyle: 'outset', borderWidth: '2px', borderColor: 'rgba(255, 255, 255, 0.20)' }} />}
+                }} whileHover={{ cursor: 'pointer' }} draggable={false} animate={{ rotate: disc, zIndex: 200, transition: { duration: 5 } }} src={pinTrack.image} style={{ position: 'fixed', width: 40, borderRadius: '100%', right: 0, bottom: 0, margin: 24, borderStyle: 'outset', borderWidth: '2px', borderColor: 'rgba(255, 255, 255, 0.20)' }} />}
 
 
 
