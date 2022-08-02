@@ -1,0 +1,67 @@
+{
+    "theme_color": "#1a1b1e",
+    "background_color": "#1a1b1e",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Biofip",
+    "short_name": "biofip",
+    "description": "It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.",
+    "categories": [
+        "social",
+        "finance",
+        "lifestyle",
+        "personalization"
+    ],
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "purpose": "maskable",
+            "src": "/maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "#",
+            "sizes": "586x1041",
+            "type": "image/png"
+        },
+        {
+            "src": "#",
+            "sizes": "586x1041",
+            "type": "image/png"
+        },
+        {
+            "src": "#",
+            "sizes": "586x1041",
+            "type": "image/png"
+        }
+    ]
+}

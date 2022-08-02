@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Instagram",
+        "image": "faInstagram",
+        "hint": "Username"
+    },
+    {
+        "name": "Twitter",
+        "image": "faTwitter",
+        "hint": "Username"
+    },
+    {
+        "name": "Facebook",
+        "image": "faFacebook",
+        "hint": "Paste your profile link here"
+    },
+    {
+        "name": "Youtube",
+        "image": "faYoutube",
+        "hint": "Paste your channel link here"
+    },
+    {
+        "name": "Snapchat",
+        "image": "faSnapchat",
+        "hint": "Username"
+    },
+    {
+        "name": "Tiktok",
+        "image": "faTiktok",
+        "hint": "Username"
+    },
+    {
+        "name": "Google Mail",
+        "image": "faGoogle",
+        "hint": "your@gmail.com"
+    },
+    {
+        "name": "Yahoo Mail",
+        "image": "faYahoo",
+        "hint": "your@yahoo.com"
+    },
+    {
+        "name": "Spotify",
+        "image": "faSpotify",
+        "hint": "Paste your playlist link here"
+    },
+    {
+        "name": "Whatsapp",
+        "image": "faWhatsapp",
+        "hint": "+(Country code) your number"
+    },
+    {
+        "name": "Telegram",
+        "image": "faTelegram",
+        "hint": "Username"
+    },
+    {
+        "name": "Line",
+        "image": "faLine",
+        "hint": "Line ID"
+    },
+    {
+        "name": "Paypal",
+        "image": "faPaypal",
+        "hint": "Username"
+    },
+    {
+        "name": "Bitcoin",
+        "image": "faBitcoin",
+        "hint": "Paste your bitcoin address here"
+    }
+]

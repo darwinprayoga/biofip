@@ -1,0 +1,21 @@
+[
+    {
+        "image_url": "https://firebasestorage.googleapis.com/v0/b/biofip-2022.appspot.com/o/Biofip-profile.png?alt=media&token=eb8d01d6-0c2c-47b0-b70a-759aeed82ff0",
+        "name": "Default Profile",
+        "owner": {
+            "address": "0x0000000000000000000000000000000000000000"
+        },
+        "creator": {
+            "config": "verified"
+        },
+        "permalink": "https://opensea.io/collection/biofip",
+        "asset_contract": {
+            "address": false
+        },
+        "token_id": false,
+        "collection": {
+            "name": "biofip",
+            "image_url": "https://firebasestorage.googleapis.com/v0/b/biofip-2022.appspot.com/o/biofip.png?alt=media&token=620541b6-130a-4e71-82a8-154591bbb44a"
+        }
+    }
+]

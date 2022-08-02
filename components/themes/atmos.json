@@ -1,0 +1,21 @@
+[
+    {
+        "image_url": "https://firebasestorage.googleapis.com/v0/b/biofip-2022.appspot.com/o/theme_ATMOS.png?alt=media&token=08f0d50c-df9e-496f-bf9f-642cec876a8b",
+        "name": "Atmos",
+        "owner": {
+            "address": "0x0000000000000000000000000000000000000000"
+        },
+        "creator": {
+            "config": "verified"
+        },
+        "permalink": "https://opensea.io/collection/biofip",
+        "asset_contract": {
+            "address": false
+        },
+        "token_id": false,
+        "collection": {
+            "name": "biofip",
+            "image_url": "https://firebasestorage.googleapis.com/v0/b/biofip-2022.appspot.com/o/biofip.png?alt=media&token=620541b6-130a-4e71-82a8-154591bbb44a"
+        }
+    }
+]
