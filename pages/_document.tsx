@@ -17,12 +17,12 @@ export default class _Document extends Document {
                     <meta name='description'
                         content='It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward.' />
                     <meta name="keywords"
-                        content="Owls Bio, nft, NFT, Biography, Self branding, Web 3.0, Identity card, Metaverse, Trading card, Biofip, biofip, Biography For Ideal Page, Design trend, UI, UX, Wallet QR, Ethereum, Multiple APIs, Linktree, Pillar.io, LinkFire, lnk.to, Smart links"
+                        content="Owls Bio, nft, NFT, Biography, Self branding, Web 3.0, Identity card, Metaverse, Trading card, Biofip, biofip, Biography Fit Page, Design trend, UI, UX, Wallet QR, Ethereum, Multiple APIs, Linktree, Pillar.io, LinkFire, lnk.to, Smart links"
                         itemProp="keywords" />
 
                     {/* <!-- Google+ / Schema.org --> */}
-                    <meta itemProp="name" content="Biography For Ideal Page" />
-                    <meta itemProp="headline" content="Biography For Ideal Page" />
+                    <meta itemProp="name" content="Biography Fit Page" />
+                    <meta itemProp="headline" content="Biography Fit Page" />
                     <meta itemProp="description"
                         content="It was about self-branding based on biography NFT by web 3.0, and multiple APIs were goin to build the traffic of your profile looking for identity card to Metaverse on forward." />
                     <meta itemProp="image" content="/icon-384x384.png" />

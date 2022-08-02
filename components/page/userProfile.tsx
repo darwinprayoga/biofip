@@ -886,7 +886,7 @@ export default function UserProfile() {
                 return null
             });
 
-        const itemsFilter = items.filter((x) => x.collection.name != "Biography For Ideal Page") //except != 'biofip' theme NFT OpenSea release !!!
+        const itemsFilter = items.filter((x) => x.collection.name != "biofip") //except != 'biofip' theme NFT OpenSea release !!!
 
         if (itemsFilter == 0) {
             alert('your NFT was Empty')
@@ -933,7 +933,7 @@ export default function UserProfile() {
                 return null
             });
 
-        const biofipFilter = items.filter((x) => x.collection.name == "Biography For Ideal Page") //'biofip' theme NFT OpenSea release !!!
+        const biofipFilter = items.filter((x) => x.collection.name == "biofip") //'biofip' theme NFT OpenSea release !!!
 
         if (biofipFilter.length == 0) {
             alert('your Biofip NFT was Empty')

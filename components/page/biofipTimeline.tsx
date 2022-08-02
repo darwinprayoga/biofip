@@ -248,7 +248,7 @@ export default function BiofipTimeline() {
                     }} whileHover={{ cursor: 'pointer', scale: 1.1, y: '-1px' }}>
                         <Biofip style={{ width: '24px' }} />
                     </motion.div>
-                    <sub>© 2022 Biography For Ideal Page</sub>
+                    <sub>© 2022 Biography Fit Page</sub>
                 </Group>
             </div>
 
