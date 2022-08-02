@@ -13,7 +13,6 @@ import Script from 'next/script';
 // page load
 import Loader from '../components/loader';
 import Head from 'next/head';
-import ErrorBoundary from '../components/error';
 
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
@@ -100,9 +99,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
           <Loader>
             <ScrollArea style={{ height: height, maxWidth: width, userSelect: 'none', msUserSelect: 'none', MozUserSelect: 'none', WebkitUserSelect: 'none' }} scrollbarSize={2}>
               <Container pt={32} pb={fullscreen ? 0 : 100}>
-                <ErrorBoundary>
-                  <Component {...pageProps} />
-                </ErrorBoundary>
+                <Component {...pageProps} />
               </Container>
             </ScrollArea>
           </Loader>
