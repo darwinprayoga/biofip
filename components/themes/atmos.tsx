@@ -434,7 +434,7 @@ export default function ATMOS({
             "height": "978",
             "width": "549",
             "wait_until": "requestsfinished",
-            "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/602.1.32 (KHTML, like Gecko) Version/10.0 Mobile/14A5261v Safari/602.1"
+            "user_agent": "mobile"
         })
 
         const blob = await fetch(imgUrl)
@@ -645,7 +645,7 @@ export default function ATMOS({
             <motion.div {...detectTop} transition={{ duration: 1 }} initial={{ y: -400 }} animate={{ y: slideDown }} drag={'y'} dragElastic={{ bottom: 0, top: 1 }} dragConstraints={{ top: 0, bottom: 10 }} style={{ display: 'flex', flexDirection: 'column', position: 'fixed', top: 0, justifyContent: 'center', width: '100%', maxWidth: '1000px', background: 'rgba(39, 45, 55, 0.70)', borderBottomLeftRadius: '32px', borderBottomRightRadius: '32px', zIndex: 200, borderStyle: 'outset', borderWidth: '2px', borderColor: 'rgba(255, 255, 255, 0.20)' }}>
 
                 <Group m={'md'} position='right'>
-                    {pinTwitter && <Button onClick={() => {
+                    {pinTwitter?.data?.profile_image_url && <Button onClick={() => {
                         setTweet('flex')
                         setTrack('none')
                         setPlaylist('none')
@@ -683,7 +683,7 @@ export default function ATMOS({
                 </Group>
 
                 <Group position='center'>
-                    {pinTwitter &&
+                    {pinTwitter?.data?.profile_image_url &&
                         <div style={{ display: tweet, margin: 16, borderRadius: 24, flexDirection: 'column', background: 'rgba(39, 45, 55, 0.70)', borderStyle: 'outset', borderWidth: '2px', borderColor: 'rgba(255, 255, 255, 0.20)' }}>
                             <motion.div onClick={() => open(`https://twitter.com/${linkTwitter}`)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: 8, paddingLeft: 16, paddingRight: 16 }}>
                                 <Group>
@@ -712,8 +712,8 @@ export default function ATMOS({
                                         <audio autoPlay ref={audio} loop src={pinTrack.audio} />
                                     </ActionIcon>
                                     <motion.div onClick={() => open(pinTrack.url)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', flexDirection: 'column' }}>
-                                        <h2 style={{ margin: 0 }}>{pinTrack.title.length > 20 ? pinTrack.title.substring(0, 20) + '...' : pinTrack.title}</h2>
-                                        <p style={{ margin: 0 }}>{pinTrack.description.length > 30 ? pinTrack.description.substring(0, 30) + '...' : pinTrack.description}</p>
+                                        <h2 style={{ margin: 0 }}>{pinTrack.title.length > 15 ? pinTrack.title.substring(0, 15) + '...' : pinTrack.title}</h2>
+                                        <p style={{ margin: 0 }}>{pinTrack.description.length > 25 ? pinTrack.description.substring(0, 25) + '...' : pinTrack.description}</p>
                                     </motion.div>
                                 </Group>
                                 <motion.div whileHover={{ cursor: 'pointer' }}><FontAwesomeIcon onClick={() => open(pinTrack.url)} icon={faSpotify} size={'2x'} /></motion.div>
@@ -729,8 +729,8 @@ export default function ATMOS({
                                         <PlayerPlay />
                                     </ActionIcon>
                                     <motion.div onClick={() => open(pinPlaylist.url)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', flexDirection: 'column' }}>
-                                        <h2 style={{ margin: 0 }}>{pinPlaylist.title.length > 20 ? pinPlaylist.title.substring(0, 20) + '...' : pinPlaylist.title}</h2>
-                                        <p style={{ margin: 0 }}>{pinPlaylist.description.length > 30 ? pinPlaylist.description.substring(0, 30) + '...' : pinPlaylist.description}</p>
+                                        <h2 style={{ margin: 0 }}>{pinPlaylist.title.length > 15 ? pinPlaylist.title.substring(0, 15) + '...' : pinPlaylist.title}</h2>
+                                        <p style={{ margin: 0 }}>{pinPlaylist.description.length > 25 ? pinPlaylist.description.substring(0, 25) + '...' : pinPlaylist.description}</p>
                                     </motion.div>
                                 </Group>
                                 <motion.div whileHover={{ cursor: 'pointer' }}><FontAwesomeIcon onClick={() => open(pinPlaylist.url)} icon={faSpotify} size={'2x'} /></motion.div>

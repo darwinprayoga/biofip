@@ -1342,7 +1342,7 @@ export default function UserProfile() {
 
                         <p>Pinned Tweet <Pin size={20} /><br /><sub>come from your Twitter account</sub></p>
 
-                        {pinTwitter ?
+                        {pinTwitter?.data?.profile_image_url ?
                             <Box sx={(theme) => ({ display: 'flex', margin: 16, borderRadius: 24, flexDirection: 'column', backgroundColor: theme.colorScheme == 'dark' ? theme.colors.dark[7] : theme.colors.gray[0] })}>
                                 <motion.div onClick={() => open(`https://twitter.com/${twitter}`)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: 8, paddingLeft: 16, paddingRight: 16 }}>
                                     <Group>
@@ -1371,8 +1371,8 @@ export default function UserProfile() {
                                             <Group>
                                                 <Music src={pinTrack.audio} />
                                                 <motion.div onClick={() => open(pinTrack.url)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', flexDirection: 'column' }}>
-                                                    <h2 style={{ margin: 0 }}>{pinTrack.title.length > 20 ? pinTrack.title.substring(0, 20) + '...' : pinTrack.title}</h2>
-                                                    <p style={{ margin: 0 }}>{pinTrack.description.length > 30 ? pinTrack.description.substring(0, 30) + '...' : pinTrack.description}</p>
+                                                    <h2 style={{ margin: 0 }}>{pinTrack.title.length > 15 ? pinTrack.title.substring(0, 15) + '...' : pinTrack.title}</h2>
+                                                    <p style={{ margin: 0 }}>{pinTrack.description.length > 25 ? pinTrack.description.substring(0, 25) + '...' : pinTrack.description}</p>
                                                 </motion.div>
                                             </Group>
                                             <motion.div whileHover={{ cursor: 'pointer' }}><FontAwesomeIcon onClick={() => open(pinTrack.url)} icon={faSpotify} size={'2x'} /></motion.div>
@@ -1391,8 +1391,8 @@ export default function UserProfile() {
                                                     <PlayerPlay />
                                                 </ActionIcon>
                                                 <motion.div onClick={() => open(pinPlaylist.url)} whileHover={{ cursor: 'pointer' }} style={{ display: 'flex', flexDirection: 'column' }}>
-                                                    <h2 style={{ margin: 0 }}>{pinPlaylist.title.length > 20 ? pinPlaylist.title.substring(0, 20) + '...' : pinPlaylist.title}</h2>
-                                                    <p style={{ margin: 0 }}>{pinPlaylist.description.length > 30 ? pinPlaylist.description.substring(0, 30) + '...' : pinPlaylist.description}</p>
+                                                    <h2 style={{ margin: 0 }}>{pinPlaylist.title.length > 15 ? pinPlaylist.title.substring(0, 15) + '...' : pinPlaylist.title}</h2>
+                                                    <p style={{ margin: 0 }}>{pinPlaylist.description.length > 25 ? pinPlaylist.description.substring(0, 25) + '...' : pinPlaylist.description}</p>
                                                 </motion.div>
                                             </Group>
                                             <motion.div whileHover={{ cursor: 'pointer' }}><FontAwesomeIcon onClick={() => open(pinPlaylist.url)} icon={faSpotify} size={'2x'} /></motion.div>

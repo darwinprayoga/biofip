@@ -44,16 +44,17 @@ export default function UsernameSearch(props: TextInputProps) {
                 type='search'
                 onKeyDown={(e) => {
                     if (e.key == 'Enter') {
-                        location.href = `/${onSearch}`
+                        location.href = `/${onSearch.toLowerCase()}`
                     }
                 }}
                 onChange={(e) => setOnSearch(e.target.value)}
                 variant='filled'
                 radius='xl'
                 size='md'
+                styles={{ input: { textTransform: 'lowercase' } }}
                 style={{ width: '70%' }}
                 rightSection={
-                    <ActionIcon onClick={() => location.href = `/${onSearch}`} size={32} radius="xl" color={theme.primaryColor} variant="filled">
+                    <ActionIcon onClick={() => location.href = `/${onSearch.toLowerCase()}`} size={32} radius="xl" color={theme.primaryColor} variant="filled">
                         {theme.dir === 'ltr' ? <ArrowRight size={18} /> : <ArrowLeft size={18} />}
                     </ActionIcon>
                 }
